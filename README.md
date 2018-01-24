@@ -10,28 +10,28 @@ The chapters 1 to 5 and 7 does not have any code files.
 
 The book has been conceptually divided into four modules as following:
 
-Part 1- Getting Started
+* Part 1- Getting Started
 
-Chapter 1: Monolithic Versus Microservices
-Chapter 2: Microservices Architecture
-Chapter 3: Microservices for Helping Hands Application
+    * Chapter 1: Monolithic Versus Microservices
+    * Chapter 2: Microservices Architecture
+    * Chapter 3: Microservices for Helping Hands Application
 
-Part 2- Preparing for Microservices
+* Part 2- Preparing for Microservices
 
-Chapter 4: Development Environment
-Chapter 5: REST APIs for Microservices
-Chapter 6: Introduction to Pedestal
-Chapter 7: Achieving Immutability with Datomic
+    * Chapter 4: Development Environment
+    * Chapter 5: REST APIs for Microservices
+    * Chapter 6: Introduction to Pedestal
+    * Chapter 7: Achieving Immutability with Datomic
 
-Part 3- Building Microservices
+* Part 3- Building Microservices
 
-Chapter 8: Building Microservices for Helping Hands
-Chapter 9: Configuring Microservices
-Chapter 10: Event-Driven Patterns for Microservices
+    * Chapter 8: Building Microservices for Helping Hands
+    * Chapter 9: Configuring Microservices
+    * Chapter 10: Event-Driven Patterns for Microservices
 
-Part 4- Microservices in Production
+* Part 4- Microservices in Production
 
-Chapter 11: Deploying and Monitoring Secured Microservices
+    * Chapter 11: Deploying and Monitoring Secured Microservices
 
 The code will look like the following:
 ```
