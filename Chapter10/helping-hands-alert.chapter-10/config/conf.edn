@@ -1,0 +1,8 @@
+{:kafka {"bootstrap.servers" "localhost:9092"
+         "group.id" "alerts"
+         "topic" "hh_alerts"}
+ :alert {:host "smtp.gmail.com"
+         :port 465
+         :ssl true
+         :user "admin@helpinghands.com"
+         :creds "secret"}}

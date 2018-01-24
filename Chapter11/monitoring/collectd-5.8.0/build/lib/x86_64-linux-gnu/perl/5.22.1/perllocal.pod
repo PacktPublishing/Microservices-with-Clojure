@@ -1,0 +1,22 @@
+=head2 Tue Jan 16 00:59:12 2018: C<Module> L<Collectd|Collectd>
+
+=over 4
+
+=item *
+
+C<installed into: /home/anuj/Documents/workspace/git/anujsrc/microservices-in-clojure/monitoring/collectd-5.8.0/build/share/perl/5.22.1>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: >
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

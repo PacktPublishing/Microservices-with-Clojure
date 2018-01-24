@@ -1,0 +1,11 @@
+prefix=/home/anuj/Documents/workspace/git/anujsrc/microservices-in-clojure/monitoring/collectd-5.8.0/build
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libcollectdclient
+Description: Client library for the unixsock plugin of collectd.
+Version: 5.8.0
+URL: http://collectd.org/
+Libs: -L${libdir} -lcollectdclient
+Cflags: -I${includedir}

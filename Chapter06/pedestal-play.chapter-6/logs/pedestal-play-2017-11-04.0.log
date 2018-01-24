@@ -1,0 +1,767 @@
+11:52:37.307 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @6292ms to org.eclipse.jetty.util.log.Slf4jLog
+11:52:37.835 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+11:52:37.895 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4039d109{/,null,AVAILABLE}
+11:52:37.930 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3e7ac200{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+11:52:37.931 [main] INFO  org.eclipse.jetty.server.Server - Started @6946ms
+11:53:02.324 [qtp546484338-18] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:53:11.715 [qtp546484338-18] INFO  io.pedestal.http - {:msg "GET /home-page", :line 80}
+11:53:22.418 [qtp546484338-19] INFO  io.pedestal.http - {:msg "GET /about-page", :line 80}
+11:53:29.528 [qtp546484338-12] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+11:53:34.819 [qtp546484338-12] INFO  io.pedestal.http - {:msg "GET /request", :line 80}
+11:53:40.505 [qtp546484338-17] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+11:53:46.456 [qtp546484338-19] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+11:53:52.432 [qtp546484338-12] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+11:58:39.274 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @6338ms to org.eclipse.jetty.util.log.Slf4jLog
+11:58:39.624 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+11:58:39.729 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1b7123e5{/,null,AVAILABLE}
+11:58:39.738 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@222b4ab1{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+11:58:39.739 [main] INFO  org.eclipse.jetty.server.Server - Started @6804ms
+11:58:45.091 [qtp1346707886-18] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+11:58:45.140 [qtp1346707886-18] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-stylobate triggered", :context {:response {:status 200, :body #object[io.pedestal.http$print_fn$fn__13961 0x27083965 "io.pedestal.http$print_fn$fn__13961@27083965"], :headers {"Strict-Transport-Security" "max-age=31536000; includeSubdomains", "X-Frame-Options" "DENY", "X-Content-Type-Options" "nosniff", "X-XSS-Protection" "1; mode=block", "X-Download-Options" "noopen", "X-Permitted-Cross-Domain-Policies" "none", "Content-Security-Policy" "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;", "Content-Type" "application/json;charset=UTF-8"}}, :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x4c93f1a3 "HTTP/1.1 200 \nDate: Sat, 04 Nov 2017 06:28:45 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubdomains\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Download-Options: noopen\r\nX-Permitted-Cross-Domain-Policies: none\r\nContent-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;\r\nContent-Type: application/json;charset=UTF-8\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x189406a2 "io.pedestal.http.servlet.FnServlet@189406a2"], :headers {"user-agent" "curl/7.47.0", "accept" "*/*", "host" "localhost:8080"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x28faf038 "Request(GET //localhost:8080/debug)@28faf038"], :path-info "/debug", :url-for #object[clojure.lang.Delay 0x5a0f227d {:status :pending, :val nil}], :uri "/debug", :server-name "localhost", :query-string nil, :path-params [], :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x3b2e0a9d "HttpInputOverHTTP@3b2e0a9d[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x5a0f227d {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x88f00fd "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@88f00fd"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__13855 0x55407d6a "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__13855@55407d6a"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x4c93f1a3 "HTTP/1.1 200 \nDate: Sat, 04 Nov 2017 06:28:45 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubdomains\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Download-Options: noopen\r\nX-Permitted-Cross-Domain-Policies: none\r\nContent-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;\r\nContent-Type: application/json;charset=UTF-8\r\n\r\n"], :route {:path "/debug", :method :get, :path-re #"/\Qdebug\E", :path-parts ["debug"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name :io.pedestal.http/json-body} #Interceptor{:name }], :route-name :pedestal-play.service/debug-page, :path-params [], :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__4614 0x500f0093 "clojure.core$constantly$fn__4614@500f0093"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x189406a2 "io.pedestal.http.servlet.FnServlet@189406a2"], :servlet-request #object[org.eclipse.jetty.server.Request 0x28faf038 "Request(GET //localhost:8080/debug)@28faf038"], :url-for #object[clojure.lang.Delay 0x5a0f227d {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x35882c3e "org.eclipse.jetty.servlet.ServletHolder$Config@35882c3e"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0xfad8ac0 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@fad8ac0"]}, :line 241}
+clojure.lang.ExceptionInfo: com.fasterxml.jackson.core.JsonGenerationException in Interceptor :io.pedestal.http.impl.servlet-interceptor/ring-response - Cannot JSON encode object of class: class org.eclipse.jetty.server.Response: HTTP/1.1 200 
+Date: Sat, 04 Nov 2017 06:28:45 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;
+Content-Type: application/json;charset=UTF-8
+
+
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:254)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$leave_all$fn__9031.invoke(chain.clj:268)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:266)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:260)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13880.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.core.JsonGenerationException: Cannot JSON encode object of class: class org.eclipse.jetty.server.Response: HTTP/1.1 200 
+Date: Sat, 04 Nov 2017 06:28:45 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;
+Content-Type: application/json;charset=UTF-8
+
+
+	at cheshire.generate$generate.invokeStatic(generate.clj:154)
+	at cheshire.generate$generate.invoke(generate.clj:116)
+	at cheshire.generate$generate.invokeStatic(generate.clj:124)
+	at cheshire.generate$generate.invoke(generate.clj:116)
+	at cheshire.core$generate_stream.invokeStatic(core.clj:105)
+	at cheshire.core$generate_stream.invoke(core.clj:80)
+	at cheshire.core$generate_stream.invokeStatic(core.clj:87)
+	at cheshire.core$generate_stream.invoke(core.clj:80)
+	at io.pedestal.http$json_print.invokeStatic(http.clj:59)
+	at io.pedestal.http$json_print.invoke(http.clj:56)
+	at io.pedestal.http$fn__13987$fn__13988.invoke(http.clj:126)
+	at io.pedestal.http$print_fn$fn__13961$fn__13962.invoke(http.clj:42)
+	at io.pedestal.http$print_fn$fn__13961.invoke(http.clj:41)
+	at io.pedestal.http.impl.servlet_interceptor$eval13527$fn__13530.invoke(servlet_interceptor.clj:66)
+	at io.pedestal.http.impl.servlet_interceptor$eval13477$fn__13478$G__13468__13485.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invokeStatic(servlet_interceptor.clj:169)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invoke(servlet_interceptor.clj:161)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invokeStatic(servlet_interceptor.clj:228)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invoke(servlet_interceptor.clj:217)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 37 common frames omitted
+11:58:48.485 [qtp1346707886-18] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+11:58:48.493 [qtp1346707886-18] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-stylobate triggered", :context {:response {:status 200, :body #object[io.pedestal.http$print_fn$fn__13961 0x756c0a52 "io.pedestal.http$print_fn$fn__13961@756c0a52"], :headers {"Strict-Transport-Security" "max-age=31536000; includeSubdomains", "X-Frame-Options" "DENY", "X-Content-Type-Options" "nosniff", "X-XSS-Protection" "1; mode=block", "X-Download-Options" "noopen", "X-Permitted-Cross-Domain-Policies" "none", "Content-Security-Policy" "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;", "Content-Type" "application/json;charset=UTF-8"}}, :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x4bc2269b "HTTP/1.1 200 \nDate: Sat, 04 Nov 2017 06:28:48 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubdomains\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Download-Options: noopen\r\nX-Permitted-Cross-Domain-Policies: none\r\nContent-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;\r\nContent-Type: application/json;charset=UTF-8\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x189406a2 "io.pedestal.http.servlet.FnServlet@189406a2"], :headers {"user-agent" "curl/7.47.0", "accept" "*/*", "host" "localhost:8080"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x64aad256 "Request(GET //localhost:8080/debug)@64aad256"], :path-info "/debug", :url-for #object[clojure.lang.Delay 0x1bfa9e8a {:status :pending, :val nil}], :uri "/debug", :server-name "localhost", :query-string nil, :path-params [], :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0xe51293d "HttpInputOverHTTP@e51293d[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x1bfa9e8a {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x88f00fd "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@88f00fd"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__13855 0x54fd2092 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__13855@54fd2092"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x4bc2269b "HTTP/1.1 200 \nDate: Sat, 04 Nov 2017 06:28:48 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubdomains\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Download-Options: noopen\r\nX-Permitted-Cross-Domain-Policies: none\r\nContent-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;\r\nContent-Type: application/json;charset=UTF-8\r\n\r\n"], :route {:path "/debug", :method :get, :path-re #"/\Qdebug\E", :path-parts ["debug"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name :io.pedestal.http/json-body} #Interceptor{:name }], :route-name :pedestal-play.service/debug-page, :path-params [], :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__4614 0x500f0093 "clojure.core$constantly$fn__4614@500f0093"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x189406a2 "io.pedestal.http.servlet.FnServlet@189406a2"], :servlet-request #object[org.eclipse.jetty.server.Request 0x64aad256 "Request(GET //localhost:8080/debug)@64aad256"], :url-for #object[clojure.lang.Delay 0x1bfa9e8a {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 2, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x35882c3e "org.eclipse.jetty.servlet.ServletHolder$Config@35882c3e"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0xfad8ac0 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@fad8ac0"]}, :line 241}
+clojure.lang.ExceptionInfo: com.fasterxml.jackson.core.JsonGenerationException in Interceptor :io.pedestal.http.impl.servlet-interceptor/ring-response - Cannot JSON encode object of class: class org.eclipse.jetty.server.Response: HTTP/1.1 200 
+Date: Sat, 04 Nov 2017 06:28:48 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;
+Content-Type: application/json;charset=UTF-8
+
+
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:254)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$leave_all$fn__9031.invoke(chain.clj:268)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:266)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:260)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13880.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.core.JsonGenerationException: Cannot JSON encode object of class: class org.eclipse.jetty.server.Response: HTTP/1.1 200 
+Date: Sat, 04 Nov 2017 06:28:48 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;
+Content-Type: application/json;charset=UTF-8
+
+
+	at cheshire.generate$generate.invokeStatic(generate.clj:154)
+	at cheshire.generate$generate.invoke(generate.clj:116)
+	at cheshire.generate$generate.invokeStatic(generate.clj:124)
+	at cheshire.generate$generate.invoke(generate.clj:116)
+	at cheshire.core$generate_stream.invokeStatic(core.clj:105)
+	at cheshire.core$generate_stream.invoke(core.clj:80)
+	at cheshire.core$generate_stream.invokeStatic(core.clj:87)
+	at cheshire.core$generate_stream.invoke(core.clj:80)
+	at io.pedestal.http$json_print.invokeStatic(http.clj:59)
+	at io.pedestal.http$json_print.invoke(http.clj:56)
+	at io.pedestal.http$fn__13987$fn__13988.invoke(http.clj:126)
+	at io.pedestal.http$print_fn$fn__13961$fn__13962.invoke(http.clj:42)
+	at io.pedestal.http$print_fn$fn__13961.invoke(http.clj:41)
+	at io.pedestal.http.impl.servlet_interceptor$eval13527$fn__13530.invoke(servlet_interceptor.clj:66)
+	at io.pedestal.http.impl.servlet_interceptor$eval13477$fn__13478$G__13468__13485.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invokeStatic(servlet_interceptor.clj:169)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invoke(servlet_interceptor.clj:161)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invokeStatic(servlet_interceptor.clj:228)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invoke(servlet_interceptor.clj:217)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 37 common frames omitted
+12:00:25.792 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @6330ms to org.eclipse.jetty.util.log.Slf4jLog
+12:00:26.168 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:00:26.229 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@75715a14{/,null,AVAILABLE}
+12:00:26.268 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7df09f55{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:00:26.268 [main] INFO  org.eclipse.jetty.server.Server - Started @6807ms
+12:00:29.390 [qtp1251896999-18] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:00:29.504 [qtp1251896999-18] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-stylobate triggered", :context {:response {:status 200, :body #object[io.pedestal.http$print_fn$fn__13961 0x6e64f8db "io.pedestal.http$print_fn$fn__13961@6e64f8db"], :headers {"Strict-Transport-Security" "max-age=31536000; includeSubdomains", "X-Frame-Options" "DENY", "X-Content-Type-Options" "nosniff", "X-XSS-Protection" "1; mode=block", "X-Download-Options" "noopen", "X-Permitted-Cross-Domain-Policies" "none", "Content-Security-Policy" "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;", "Content-Type" "application/json;charset=UTF-8"}}, :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x5ffeb786 "HTTP/1.1 200 \nDate: Sat, 04 Nov 2017 06:30:29 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubdomains\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Download-Options: noopen\r\nX-Permitted-Cross-Domain-Policies: none\r\nContent-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;\r\nContent-Type: application/json;charset=UTF-8\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x77cbc31f "io.pedestal.http.servlet.FnServlet@77cbc31f"], :headers {"user-agent" "curl/7.47.0", "accept" "*/*", "host" "localhost:8080"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x6a80f8f7 "Request(GET //localhost:8080/debug)@6a80f8f7"], :path-info "/debug", :url-for #object[clojure.lang.Delay 0x4d535c9c {:status :pending, :val nil}], :uri "/debug", :server-name "localhost", :query-string nil, :path-params [], :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x1cd67862 "HttpInputOverHTTP@1cd67862[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x4d535c9c {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x38419db1 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@38419db1"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__13855 0x6fe442c6 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__13855@6fe442c6"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x5ffeb786 "HTTP/1.1 200 \nDate: Sat, 04 Nov 2017 06:30:29 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubdomains\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Download-Options: noopen\r\nX-Permitted-Cross-Domain-Policies: none\r\nContent-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;\r\nContent-Type: application/json;charset=UTF-8\r\n\r\n"], :route {:path "/debug", :method :get, :path-re #"/\Qdebug\E", :path-parts ["debug"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/json-body} #Interceptor{:name }], :route-name :pedestal-play.service/debug-page, :path-params [], :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__4614 0x209ee33e "clojure.core$constantly$fn__4614@209ee33e"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x77cbc31f "io.pedestal.http.servlet.FnServlet@77cbc31f"], :servlet-request #object[org.eclipse.jetty.server.Request 0x6a80f8f7 "Request(GET //localhost:8080/debug)@6a80f8f7"], :url-for #object[clojure.lang.Delay 0x4d535c9c {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x1c20c9c0 "org.eclipse.jetty.servlet.ServletHolder$Config@1c20c9c0"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x2d0b7531 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@2d0b7531"]}, :line 241}
+clojure.lang.ExceptionInfo: com.fasterxml.jackson.core.JsonGenerationException in Interceptor :io.pedestal.http.impl.servlet-interceptor/ring-response - Cannot JSON encode object of class: class org.eclipse.jetty.server.Response: HTTP/1.1 200 
+Date: Sat, 04 Nov 2017 06:30:29 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;
+Content-Type: application/json;charset=UTF-8
+
+
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:254)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$leave_all$fn__9031.invoke(chain.clj:268)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:266)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:260)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13880.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.fasterxml.jackson.core.JsonGenerationException: Cannot JSON encode object of class: class org.eclipse.jetty.server.Response: HTTP/1.1 200 
+Date: Sat, 04 Nov 2017 06:30:29 GMT
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;
+Content-Type: application/json;charset=UTF-8
+
+
+	at cheshire.generate$generate.invokeStatic(generate.clj:154)
+	at cheshire.generate$generate.invoke(generate.clj:116)
+	at cheshire.generate$generate.invokeStatic(generate.clj:124)
+	at cheshire.generate$generate.invoke(generate.clj:116)
+	at cheshire.core$generate_stream.invokeStatic(core.clj:105)
+	at cheshire.core$generate_stream.invoke(core.clj:80)
+	at cheshire.core$generate_stream.invokeStatic(core.clj:87)
+	at cheshire.core$generate_stream.invoke(core.clj:80)
+	at io.pedestal.http$json_print.invokeStatic(http.clj:59)
+	at io.pedestal.http$json_print.invoke(http.clj:56)
+	at io.pedestal.http$fn__13987$fn__13988.invoke(http.clj:126)
+	at io.pedestal.http$print_fn$fn__13961$fn__13962.invoke(http.clj:42)
+	at io.pedestal.http$print_fn$fn__13961.invoke(http.clj:41)
+	at io.pedestal.http.impl.servlet_interceptor$eval13527$fn__13530.invoke(servlet_interceptor.clj:66)
+	at io.pedestal.http.impl.servlet_interceptor$eval13477$fn__13478$G__13468__13485.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invokeStatic(servlet_interceptor.clj:169)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invoke(servlet_interceptor.clj:161)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invokeStatic(servlet_interceptor.clj:228)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invoke(servlet_interceptor.clj:217)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 37 common frames omitted
+12:03:05.370 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5602ms to org.eclipse.jetty.util.log.Slf4jLog
+12:03:05.665 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:03:05.683 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@75715a14{/,null,AVAILABLE}
+12:03:05.694 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7df09f55{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:03:05.694 [main] INFO  org.eclipse.jetty.server.Server - Started @5928ms
+12:03:08.642 [qtp1251896999-18] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:03:08.716 [qtp1251896999-18] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-stylobate triggered", :context {:response {:status 200, :body #object[io.pedestal.http$transit_body_interceptor$fn__13992$fn__13993 0x2b53d7c1 "io.pedestal.http$transit_body_interceptor$fn__13992$fn__13993@2b53d7c1"], :headers {"Strict-Transport-Security" "max-age=31536000; includeSubdomains", "X-Frame-Options" "DENY", "X-Content-Type-Options" "nosniff", "X-XSS-Protection" "1; mode=block", "X-Download-Options" "noopen", "X-Permitted-Cross-Domain-Policies" "none", "Content-Security-Policy" "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;", "Content-Type" "application/transit+json;charset=UTF-8"}}, :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x5f2373b "HTTP/1.1 200 \nDate: Sat, 04 Nov 2017 06:33:08 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubdomains\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Download-Options: noopen\r\nX-Permitted-Cross-Domain-Policies: none\r\nContent-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;\r\nContent-Type: application/transit+json;charset=UTF-8\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x40968177 "io.pedestal.http.servlet.FnServlet@40968177"], :headers {"user-agent" "curl/7.47.0", "accept" "*/*", "host" "localhost:8080"}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0x172f5e63 "Request(GET //localhost:8080/debug)@172f5e63"], :path-info "/debug", :url-for #object[clojure.lang.Delay 0x2ff0eef4 {:status :pending, :val nil}], :uri "/debug", :server-name "localhost", :query-string nil, :path-params [], :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x27010787 "HttpInputOverHTTP@27010787[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #object[clojure.lang.Delay 0x2ff0eef4 {:status :pending, :val nil}]}, :enter-async [#object[io.pedestal.http.impl.servlet_interceptor$start_servlet_async 0x139dbb19 "io.pedestal.http.impl.servlet_interceptor$start_servlet_async@139dbb19"]], :io.pedestal.interceptor.chain/terminators (#object[io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__13855 0x4526e953 "io.pedestal.http.impl.servlet_interceptor$terminator_inject$fn__13855@4526e953"]), :servlet-response #object[org.eclipse.jetty.server.Response 0x5f2373b "HTTP/1.1 200 \nDate: Sat, 04 Nov 2017 06:33:08 GMT\r\nStrict-Transport-Security: max-age=31536000; includeSubdomains\r\nX-Frame-Options: DENY\r\nX-Content-Type-Options: nosniff\r\nX-XSS-Protection: 1; mode=block\r\nX-Download-Options: noopen\r\nX-Permitted-Cross-Domain-Policies: none\r\nContent-Security-Policy: object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;\r\nContent-Type: application/transit+json;charset=UTF-8\r\n\r\n"], :route {:path "/debug", :method :get, :path-re #"/\Qdebug\E", :path-parts ["debug"], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/transit-json-body} #Interceptor{:name }], :route-name :pedestal-play.service/debug-page, :path-params [], :io.pedestal.http.route.prefix-tree/satisfies-constraints? #object[clojure.core$constantly$fn__4614 0x46a88882 "clojure.core$constantly$fn__4614@46a88882"]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x40968177 "io.pedestal.http.servlet.FnServlet@40968177"], :servlet-request #object[org.eclipse.jetty.server.Request 0x172f5e63 "Request(GET //localhost:8080/debug)@172f5e63"], :url-for #object[clojure.lang.Delay 0x2ff0eef4 {:status :pending, :val nil}], :io.pedestal.interceptor.chain/execution-id 1, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x13ecc110 "org.eclipse.jetty.servlet.ServletHolder$Config@13ecc110"], :async? #object[io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_ 0x11dfdd17 "io.pedestal.http.impl.servlet_interceptor$servlet_async_QMARK_@11dfdd17"]}, :line 241}
+clojure.lang.ExceptionInfo: java.lang.RuntimeException in Interceptor :io.pedestal.http.impl.servlet-interceptor/ring-response - java.lang.Exception: Not supported: class org.eclipse.jetty.server.Response
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:254)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$leave_all$fn__9031.invoke(chain.clj:268)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:266)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:260)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13880.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: java.lang.Exception: Not supported: class org.eclipse.jetty.server.Response
+	at com.cognitect.transit.impl.WriterFactory$1.write(WriterFactory.java:60)
+	at cognitect.transit$write.invokeStatic(transit.clj:148)
+	at cognitect.transit$write.invoke(transit.clj:145)
+	at io.pedestal.http$transit_body_interceptor$fn__13992$fn__13993.invoke(http.clj:155)
+	at io.pedestal.http.impl.servlet_interceptor$eval13527$fn__13530.invoke(servlet_interceptor.clj:66)
+	at io.pedestal.http.impl.servlet_interceptor$eval13477$fn__13478$G__13468__13485.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invokeStatic(servlet_interceptor.clj:92)
+	at io.pedestal.http.impl.servlet_interceptor$write_body.invoke(servlet_interceptor.clj:90)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invokeStatic(servlet_interceptor.clj:169)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invoke(servlet_interceptor.clj:161)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invokeStatic(servlet_interceptor.clj:228)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invoke(servlet_interceptor.clj:217)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 37 common frames omitted
+Caused by: java.lang.Exception: Not supported: class org.eclipse.jetty.server.Response
+	at com.cognitect.transit.impl.AbstractEmitter.marshal(AbstractEmitter.java:176)
+	at com.cognitect.transit.impl.JsonEmitter.emitMap(JsonEmitter.java:158)
+	at com.cognitect.transit.impl.AbstractEmitter.emitMap(AbstractEmitter.java:70)
+	at com.cognitect.transit.impl.AbstractEmitter.marshal(AbstractEmitter.java:166)
+	at com.cognitect.transit.impl.AbstractEmitter.marshalTop(AbstractEmitter.java:193)
+	at com.cognitect.transit.impl.JsonEmitter.emit(JsonEmitter.java:28)
+	at com.cognitect.transit.impl.WriterFactory$1.write(WriterFactory.java:57)
+	... 49 common frames omitted
+12:06:03.441 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5391ms to org.eclipse.jetty.util.log.Slf4jLog
+12:06:03.823 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:06:03.872 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1b7123e5{/,null,AVAILABLE}
+12:06:03.910 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@222b4ab1{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:06:03.911 [main] INFO  org.eclipse.jetty.server.Server - Started @5863ms
+12:06:06.530 [qtp1346707886-18] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:06:13.275 [qtp1346707886-18] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:07:31.266 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @6629ms to org.eclipse.jetty.util.log.Slf4jLog
+12:07:31.623 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:07:31.721 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4039d109{/,null,AVAILABLE}
+12:07:31.738 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3e7ac200{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:07:31.738 [main] INFO  org.eclipse.jetty.server.Server - Started @7102ms
+12:07:39.538 [qtp546484338-17] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:09:00.139 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5847ms to org.eclipse.jetty.util.log.Slf4jLog
+12:09:00.422 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:09:00.449 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1b7123e5{/,null,AVAILABLE}
+12:09:00.515 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@222b4ab1{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:09:00.516 [main] INFO  org.eclipse.jetty.server.Server - Started @6225ms
+12:09:08.407 [qtp1346707886-19] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:20:39.918 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @4923ms to org.eclipse.jetty.util.log.Slf4jLog
+12:20:40.074 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:20:40.094 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7739bcca{/,null,AVAILABLE}
+12:20:40.109 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7efcdcde{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:20:40.110 [main] INFO  org.eclipse.jetty.server.Server - Started @5117ms
+12:21:15.067 [qtp1002797812-18] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:21:15.070 [qtp1002797812-18] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:21:15.075 [qtp1002797812-18] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:28:03.934 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5013ms to org.eclipse.jetty.util.log.Slf4jLog
+12:28:04.094 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:28:04.129 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@28897ca{/,null,AVAILABLE}
+12:28:04.141 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@37ecff9{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:28:04.141 [main] INFO  org.eclipse.jetty.server.Server - Started @5222ms
+12:28:06.676 [qtp1468020386-18] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:28:09.562 [qtp1468020386-18] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+12:28:12.602 [qtp1468020386-19] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:29:53.331 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5442ms to org.eclipse.jetty.util.log.Slf4jLog
+12:29:53.571 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:29:53.616 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@18cdacd{/,null,AVAILABLE}
+12:29:53.667 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@8a607a9{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:29:53.668 [main] INFO  org.eclipse.jetty.server.Server - Started @5782ms
+12:29:57.793 [qtp1685965918-17] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:29:57.796 [qtp1685965918-17] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:29:57.804 [qtp1685965918-17] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:30:00.264 [qtp1685965918-17] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+12:30:00.265 [qtp1685965918-17] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:30:00.275 [qtp1685965918-17] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:30:02.702 [qtp1685965918-19] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:30:02.703 [qtp1685965918-19] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:30:02.708 [qtp1685965918-19] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:30:24.117 [qtp1685965918-13] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x16 in state=START for buffer HeapByteBuffer@66a946dc[p=1,l=214,c=8192,r=213]={\x16<<<\x03\x03\x00\xD1\x01\x00\x00\xCd\x03\x03Y\xFde\x88\xB1o...\x01\x04\x02\x03\x03\x03\x01\x03\x02\x02\x03\x02\x01\x02\x02>>>Cross-Domain-Poli...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+12:30:24.118 [qtp1685965918-13] WARN  org.eclipse.jetty.http.HttpParser - bad HTTP parsed: 400 Illegal character 0x16 for HttpChannelOverHttp@1999658{r=0,c=false,a=IDLE,uri=null}
+12:30:24.120 [qtp1685965918-18] WARN  org.eclipse.jetty.http.HttpParser - Illegal character 0x0 in state=METHOD for buffer HeapByteBuffer@42719d8f[p=5,l=7,c=8192,r=2]={JRMI\x00<<<\x02K>>>1 400 Illegal cha...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+12:30:24.121 [qtp1685965918-18] WARN  org.eclipse.jetty.http.HttpParser - bad HTTP parsed: 400 Illegal character 0x0 for HttpChannelOverHttp@4cb67bb1{r=0,c=false,a=IDLE,uri=null}
+12:34:46.717 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5192ms to org.eclipse.jetty.util.log.Slf4jLog
+12:36:09.757 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:36:09.801 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3300747{/,null,AVAILABLE}
+12:36:09.814 [nREPL-worker-1] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@687d5e60{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:36:09.815 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - Started @88292ms
+12:36:52.741 [qtp202323322-30] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:36:52.745 [qtp202323322-30] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:36:52.759 [qtp202323322-30] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:39:10.968 [nREPL-worker-3] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@687d5e60{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:39:11.015 [nREPL-worker-3] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3300747{/,null,UNAVAILABLE}
+12:39:53.361 [nREPL-worker-4] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:39:53.364 [nREPL-worker-4] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@172da364{/,null,AVAILABLE}
+12:39:53.367 [nREPL-worker-4] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5bbcf2cf{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:39:53.368 [nREPL-worker-4] INFO  org.eclipse.jetty.server.Server - Started @311846ms
+12:40:01.192 [qtp1546749288-59] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:40:01.194 [qtp1546749288-59] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:40:01.200 [qtp1546749288-59] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:41:19.777 [nREPL-worker-5] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5bbcf2cf{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:41:19.779 [nREPL-worker-5] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@172da364{/,null,UNAVAILABLE}
+12:41:23.359 [nREPL-worker-5] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:41:23.365 [nREPL-worker-5] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@75f5f5ea{/,null,AVAILABLE}
+12:41:23.366 [nREPL-worker-5] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@35af6411{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:41:23.367 [nREPL-worker-5] INFO  org.eclipse.jetty.server.Server - Started @401844ms
+12:41:27.331 [qtp625509282-74] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:41:27.332 [qtp625509282-74] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:41:27.341 [qtp625509282-74] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:41:52.606 [nREPL-worker-5] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@35af6411{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:41:52.607 [nREPL-worker-5] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@75f5f5ea{/,null,UNAVAILABLE}
+12:42:30.094 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @4604ms to org.eclipse.jetty.util.log.Slf4jLog
+12:42:43.297 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+12:42:43.327 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3e09fe24{/,null,AVAILABLE}
+12:42:43.339 [nREPL-worker-0] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@66788a58{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+12:42:43.340 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @17851ms
+12:43:06.773 [qtp1058169444-28] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:43:06.777 [qtp1058169444-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:43:06.788 [qtp1058169444-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:43:32.336 [qtp1058169444-28] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+12:43:32.338 [qtp1058169444-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:43:32.357 [qtp1058169444-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:48:06.225 [qtp1058169444-29] INFO  io.pedestal.http - {:msg "GET /debug/1", :line 80}
+12:48:06.227 [qtp1058169444-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:48:06.234 [qtp1058169444-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+12:48:08.188 [qtp1058169444-29] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+12:48:08.190 [qtp1058169444-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:48:08.196 [qtp1058169444-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:48:13.731 [qtp1058169444-23] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:48:13.732 [qtp1058169444-23] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:48:13.736 [qtp1058169444-23] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:49:51.382 [qtp1058169444-27] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:49:51.385 [qtp1058169444-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:49:51.390 [qtp1058169444-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:50:02.063 [qtp1058169444-27] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:50:02.065 [qtp1058169444-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:50:02.074 [qtp1058169444-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:55:16.541 [qtp1058169444-29] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:55:16.543 [qtp1058169444-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:55:16.558 [qtp1058169444-29] ERROR i.p.http.impl.servlet-interceptor - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 313}
+clojure.lang.ExceptionInfo: java.lang.AssertionError in Interceptor :io.pedestal.http.route/router - Assert failed: In row 3, there were unused elements (#Interceptor{:name :io.pedestal.http/html-body} pedestal-play.service/hello-page).
+The whole route was: ["/hello" :get #Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} pedestal-play.service/hello-page]
+(empty? (:remaining ctx))
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__8998.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13874.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.AssertionError: Assert failed: In row 3, there were unused elements (#Interceptor{:name :io.pedestal.http/html-body} pedestal-play.service/hello-page).
+The whole route was: ["/hello" :get #Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} pedestal-play.service/hello-page]
+(empty? (:remaining ctx))
+	at io.pedestal.http.route.definition.table$finalize.invokeStatic(table.clj:118)
+	at io.pedestal.http.route.definition.table$finalize.invoke(table.clj:116)
+	at io.pedestal.http.route.definition.table$route_table_row.invokeStatic(table.clj:123)
+	at io.pedestal.http.route.definition.table$route_table_row.invoke(table.clj:121)
+	at clojure.core$partial$fn__4759.invoke(core.clj:2516)
+	at clojure.core$map_indexed$mapi__7050$fn__7051.invoke(core.clj:7022)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:521)
+	at clojure.core$seq__4357.invokeStatic(core.clj:137)
+	at clojure.core$map$fn__4785.invoke(core.clj:2637)
+	at clojure.lang.LazySeq.sval(LazySeq.java:40)
+	at clojure.lang.LazySeq.seq(LazySeq.java:49)
+	at clojure.lang.RT.seq(RT.java:521)
+	at clojure.core$seq__4357.invokeStatic(core.clj:137)
+	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:24)
+	at clojure.core.protocols$fn__6738.invokeStatic(protocols.clj:75)
+	at clojure.core.protocols$fn__6738.invoke(protocols.clj:75)
+	at clojure.core.protocols$fn__6684$G__6679__6697.invoke(protocols.clj:13)
+	at clojure.core$reduce.invokeStatic(core.clj:6545)
+	at clojure.core$reduce.invoke(core.clj:6527)
+	at io.pedestal.http.route.definition$prioritize_constraints.invokeStatic(definition.clj:54)
+	at io.pedestal.http.route.definition$prioritize_constraints.invoke(definition.clj:47)
+	at io.pedestal.http.route.definition$ensure_routes_integrity.invokeStatic(definition.clj:72)
+	at io.pedestal.http.route.definition$ensure_routes_integrity.invoke(definition.clj:71)
+	at io.pedestal.http.route.definition.table$table_routes.invokeStatic(table.clj:160)
+	at io.pedestal.http.route.definition.table$table_routes.invoke(table.clj:151)
+	at io.pedestal.http.route.definition.table$table_routes.invokeStatic(table.clj:153)
+	at io.pedestal.http.route.definition.table$table_routes.invoke(table.clj:151)
+	at io.pedestal.http.route$eval9962$fn__9963.invoke(route.clj:362)
+	at io.pedestal.http.route$eval9937$fn__9938$G__9928__9943.invoke(route.clj:346)
+	at io.pedestal.http.route$expand_routes.invokeStatic(route.clj:379)
+	at io.pedestal.http.route$expand_routes.invoke(route.clj:364)
+	at pedestal_play.server$run_dev$fn__14120.invoke(server.clj:21)
+	at io.pedestal.http.route$eval10006$fn__10007$fn__10008.invoke(route.clj:422)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+12:55:49.293 [qtp1058169444-27] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:55:49.294 [qtp1058169444-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:55:49.301 [qtp1058169444-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:55:55.616 [qtp1058169444-22] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+12:55:55.617 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:55:55.624 [qtp1058169444-22] ERROR i.p.http.impl.servlet-interceptor - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 313}
+clojure.lang.ExceptionInfo: java.lang.ClassCastException in Interceptor :io.pedestal.http.secure-headers/secure-headers - java.lang.String cannot be cast to clojure.lang.Associative
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:254)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$leave_all$fn__9025.invoke(chain.clj:268)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:266)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:260)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13874.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassCastException: java.lang.String cannot be cast to clojure.lang.Associative
+	at clojure.lang.RT.assoc(RT.java:792)
+	at clojure.core$assoc__4371.invokeStatic(core.clj:191)
+	at clojure.core$assoc_in.invokeStatic(core.clj:5936)
+	at clojure.core$assoc_in.invokeStatic(core.clj:5936)
+	at clojure.core$assoc_in.invoke(core.clj:5928)
+	at io.pedestal.http.secure_headers$secure_headers$fn__11961.invoke(secure_headers.clj:186)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 37 common frames omitted
+12:57:11.363 [qtp1058169444-27] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+12:57:11.365 [qtp1058169444-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:57:11.371 [qtp1058169444-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:57:13.846 [qtp1058169444-22] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+12:57:13.848 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:57:13.853 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:57:18.588 [qtp1058169444-29] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+12:57:18.589 [qtp1058169444-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:57:18.596 [qtp1058169444-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+13:07:19.563 [qtp1058169444-22] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+13:07:19.565 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+13:07:19.570 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+13:07:22.984 [qtp1058169444-22] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+13:07:22.985 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+13:07:22.991 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+13:07:41.404 [qtp1058169444-22] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+13:07:41.405 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+13:07:41.412 [qtp1058169444-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+13:09:08.608 [qtp1058169444-23] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+13:09:08.609 [qtp1058169444-23] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+13:09:08.615 [qtp1058169444-23] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+13:11:05.360 [nREPL-worker-8] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@66788a58{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+13:11:05.366 [nREPL-worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3e09fe24{/,null,UNAVAILABLE}
+17:25:49.682 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @4657ms to org.eclipse.jetty.util.log.Slf4jLog
+17:29:24.154 [nREPL-worker-2] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+17:29:24.185 [nREPL-worker-2] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1226c860{/,null,AVAILABLE}
+17:29:24.196 [nREPL-worker-2] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@18ab24f4{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+17:29:24.197 [nREPL-worker-2] INFO  org.eclipse.jetty.server.Server - Started @219173ms
+17:35:52.444 [qtp1127754610-33] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+17:35:52.454 [qtp1127754610-33] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:35:52.470 [qtp1127754610-33] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+17:35:52.893 [qtp1127754610-35] INFO  io.pedestal.http - {:msg "GET /favicon.ico", :line 80}
+17:35:52.893 [qtp1127754610-35] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:35:52.898 [qtp1127754610-35] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+17:36:20.911 [qtp1127754610-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+17:36:20.916 [qtp1127754610-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:36:20.931 [qtp1127754610-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+17:36:20.997 [qtp1127754610-34] INFO  io.pedestal.http - {:msg "GET /favicon.ico", :line 80}
+17:36:20.997 [qtp1127754610-34] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:36:21.001 [qtp1127754610-34] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+17:36:35.071 [qtp1127754610-28] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+17:36:35.074 [qtp1127754610-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:36:35.096 [qtp1127754610-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+17:36:44.927 [qtp1127754610-35] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+17:36:44.931 [qtp1127754610-35] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:36:44.942 [qtp1127754610-35] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+17:37:24.706 [qtp1127754610-33] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+17:37:24.707 [qtp1127754610-33] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:37:24.709 [qtp1127754610-33] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+17:37:42.374 [qtp1127754610-30] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+17:37:42.376 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:37:42.387 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+17:37:48.100 [qtp1127754610-30] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+17:37:48.101 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:37:48.104 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+17:38:04.792 [qtp1127754610-33] INFO  io.pedestal.http - {:msg "GET /debug", :line 80}
+17:38:04.792 [qtp1127754610-33] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:38:04.795 [qtp1127754610-33] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+17:39:12.366 [qtp1127754610-30] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+17:39:12.367 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:39:12.373 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+17:39:32.859 [qtp1127754610-30] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+17:39:32.860 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:39:32.862 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+17:39:45.942 [qtp1127754610-30] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+17:39:45.942 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:39:45.948 [qtp1127754610-30] ERROR i.p.http.impl.servlet-interceptor - {:msg "Dev interceptor caught an exception; Forwarding it as the response.", :line 313}
+clojure.lang.ExceptionInfo: java.lang.NullPointerException in Interceptor :pedestal-play.service/msg-play - 
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invokeStatic(chain.clj:171)
+	at io.pedestal.interceptor.chain$process_all_with_binding.invoke(chain.clj:146)
+	at io.pedestal.interceptor.chain$process_all$fn__8998.invoke(chain.clj:188)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$process_all.invokeStatic(chain.clj:186)
+	at io.pedestal.interceptor.chain$process_all.invoke(chain.clj:182)
+	at io.pedestal.interceptor.chain$enter_all.invokeStatic(chain.clj:235)
+	at io.pedestal.interceptor.chain$enter_all.invoke(chain.clj:229)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13874.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException: null
+	at clojure.string$capitalize.invokeStatic(string.clj:201)
+	at clojure.string$capitalize.invoke(string.clj:196)
+	at clojure.lang.AFn.applyToHelper(AFn.java:154)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:648)
+	at clojure.core$update_in.invokeStatic(core.clj:5950)
+	at clojure.core$update_in.doInvoke(core.clj:5939)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at clojure.lang.AFn.applyToHelper(AFn.java:160)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:652)
+	at clojure.core$update_in.invokeStatic(core.clj:5949)
+	at clojure.core$update_in.doInvoke(core.clj:5939)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at clojure.lang.AFn.applyToHelper(AFn.java:160)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.core$apply.invokeStatic(core.clj:652)
+	at clojure.core$update_in.invokeStatic(core.clj:5949)
+	at clojure.core$update_in.doInvoke(core.clj:5939)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at pedestal_play.service$fn__14044.invokeStatic(service.clj:36)
+	at pedestal_play.service$fn__14044.invoke(service.clj:35)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 39 common frames omitted
+17:40:01.040 [qtp1127754610-30] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+17:40:01.041 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+17:40:01.049 [qtp1127754610-30] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+18:08:43.607 [nREPL-worker-6] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@18ab24f4{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+18:08:43.611 [nREPL-worker-6] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1226c860{/,null,UNAVAILABLE}

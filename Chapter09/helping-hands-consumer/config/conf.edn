@@ -1,0 +1,1 @@
+{:datomic {:uri "datomic:mem://consumer"}}

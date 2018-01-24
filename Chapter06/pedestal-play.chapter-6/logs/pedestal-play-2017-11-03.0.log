@@ -1,0 +1,13 @@
+11:44:40.204 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5653ms to org.eclipse.jetty.util.log.Slf4jLog
+11:44:40.432 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+11:44:40.472 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7ef3b7ac{/,null,AVAILABLE}
+11:44:40.536 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@573e38c{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+11:44:40.537 [main] INFO  org.eclipse.jetty.server.Server - Started @5989ms
+11:46:19.268 [qtp200027521-19] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:46:19.429 [qtp200027521-18] INFO  io.pedestal.http - {:msg "GET /favicon.ico", :line 80}
+11:48:01.436 [qtp200027521-12] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+11:50:02.013 [qtp200027521-12] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+11:59:28.586 [qtp200027521-12] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:59:34.115 [qtp200027521-12] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:00:00.554 [qtp200027521-12] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:00:09.594 [qtp200027521-19] INFO  io.pedestal.http - {:msg "GET /about", :line 80}

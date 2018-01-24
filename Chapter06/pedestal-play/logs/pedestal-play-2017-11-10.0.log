@@ -1,0 +1,382 @@
+00:26:48.628 [nREPL-worker-32] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+00:26:48.669 [nREPL-worker-32] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@59b27ebd{/,null,AVAILABLE}
+00:26:48.669 [nREPL-worker-32] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@a549646{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+00:26:48.674 [nREPL-worker-32] INFO  org.eclipse.jetty.server.Server - Started @60856310ms
+00:28:08.668 [qtp650512656-120] WARN  o.e.j.w.s.WebSocketServerFactory - Client 127.0.0.1 (:36222) User Agent: "curl/7.47.0" requested WebSocket version [-1], Jetty supports version: [13]
+00:29:29.363 [qtp650512656-119] WARN  org.eclipse.jetty.server.HttpChannel - /chat
+java.lang.IllegalStateException: Missing request header 'Sec-WebSocket-Key'
+	at org.eclipse.jetty.websocket.server.HandshakeRFC6455.doHandshakeResponse(HandshakeRFC6455.java:44)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.upgrade(WebSocketServerFactory.java:612)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.acceptWebSocket(WebSocketServerFactory.java:232)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.acceptWebSocket(WebSocketServerFactory.java:194)
+	at org.eclipse.jetty.websocket.servlet.WebSocketServlet.service(WebSocketServlet.java:161)
+	at io.pedestal.http.jetty.websockets.proxy$org.eclipse.jetty.websocket.servlet.WebSocketServlet$ff19274a.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.pedestal.http.jetty.websockets.proxy$org.eclipse.jetty.websocket.servlet.WebSocketServlet$ff19274a.service(Unknown Source)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+00:33:07.103 [qtp650512656-119] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:33:56.127 [qtp650512656-116] WARN  o.e.j.w.s.WebSocketServerFactory - Client 127.0.0.1 (:36360) User Agent: "curl/7.47.0" requested WebSocket version [-1], Jetty supports version: [13]
+00:34:09.832 [qtp650512656-119] WARN  org.eclipse.jetty.server.HttpChannel - /chat
+java.lang.IllegalStateException: Missing request header 'Sec-WebSocket-Key'
+	at org.eclipse.jetty.websocket.server.HandshakeRFC6455.doHandshakeResponse(HandshakeRFC6455.java:44)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.upgrade(WebSocketServerFactory.java:612)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.acceptWebSocket(WebSocketServerFactory.java:232)
+	at org.eclipse.jetty.websocket.server.WebSocketServerFactory.acceptWebSocket(WebSocketServerFactory.java:194)
+	at org.eclipse.jetty.websocket.servlet.WebSocketServlet.service(WebSocketServlet.java:161)
+	at io.pedestal.http.jetty.websockets.proxy$org.eclipse.jetty.websocket.servlet.WebSocketServlet$ff19274a.service(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.pedestal.http.jetty.websockets.proxy$org.eclipse.jetty.websocket.servlet.WebSocketServlet$ff19274a.service(Unknown Source)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+00:34:18.376 [qtp650512656-119] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:36:07.662 [qtp650512656-121] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:36:29.719 [qtp650512656-121] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:41:21.159 [qtp650512656-120] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:41:26.377 [qtp650512656-120] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:43:09.800 [qtp650512656-119] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:51:25.998 [qtp650512656-121] INFO  pedestal-play.service - {:msg "Client: Hello from the Client-1!", :line 113}
+00:52:09.011 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 8", :line 102}
+00:52:20.341 [qtp650512656-121] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:52:32.691 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 7", :line 102}
+00:52:41.085 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 6", :line 102}
+00:53:00.932 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 5", :line 102}
+00:53:02.318 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 4", :line 102}
+00:53:04.570 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 3", :line 102}
+00:53:05.986 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 2", :line 102}
+00:53:07.589 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 1", :line 102}
+00:53:17.748 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 1", :line 102}
+00:53:17.750 [qtp650512656-116] INFO  pedestal-play.service - {:msg "WS Closed:", :reason nil, :line 119}
+00:53:23.582 [nREPL-worker-44] INFO  pedestal-play.service - {:msg "Active Connections: 0", :line 102}
+00:53:29.023 [qtp650512656-121] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:55:14.572 [qtp650512656-121] INFO  io.pedestal.http - {:msg "GET /cht", :line 80}
+00:55:14.573 [qtp650512656-121] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+00:55:14.577 [qtp650512656-121] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+00:55:14.885 [qtp650512656-114] INFO  io.pedestal.http - {:msg "GET /favicon.ico", :line 80}
+00:55:14.885 [qtp650512656-114] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+00:55:14.889 [qtp650512656-114] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+00:57:45.494 [nREPL-worker-46] INFO  pedestal-play.service - {:msg "Active Connections: 0", :line 102}
+00:57:50.457 [qtp650512656-119] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+00:58:16.933 [nREPL-worker-46] INFO  pedestal-play.service - {:msg "Active Connections: 0", :line 102}
+00:58:20.636 [qtp650512656-119] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+01:00:19.060 [nREPL-worker-47] INFO  pedestal-play.service - {:msg "Active Connections: 0", :line 102}
+01:00:23.021 [qtp650512656-155] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+01:09:10.863 [qtp650512656-154] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+01:09:10.864 [qtp650512656-154] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "ws://localhost:8080", :allowed true, :line 84}
+01:09:10.868 [qtp650512656-154] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "ws://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+01:09:20.786 [qtp650512656-155] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+01:09:20.787 [qtp650512656-155] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "ws://localhost:8080", :allowed true, :line 84}
+01:09:20.791 [qtp650512656-155] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "ws://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+01:12:08.163 [nREPL-worker-50] INFO  pedestal-play.service - {:msg "Active Connections: 0", :line 102}
+01:12:08.166 [qtp650512656-121] INFO  pedestal-play.service - {:msg "WS Closed:", :reason nil, :line 119}
+01:18:43.591 [qtp650512656-155] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "WebSocket Read EOF", :line 119}
+01:18:47.520 [nREPL-worker-51] INFO  pedestal-play.service - {:msg "Active Connections: 0", :line 102}
+01:23:43.546 [nREPL-worker-52] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@a549646{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+01:23:43.548 [nREPL-worker-52] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "Shutdown", :line 119}
+01:23:43.552 [nREPL-worker-52] ERROR pedestal-play.service - {:msg "WS Error happened", :line 117}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.eclipse.jetty.websocket.common.io.FrameFlusher$Flusher.flush(FrameFlusher.java:153)
+	at org.eclipse.jetty.websocket.common.io.FrameFlusher$Flusher.process(FrameFlusher.java:217)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.websocket.common.io.FrameFlusher.enqueue(FrameFlusher.java:382)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.outgoingFrame(AbstractWebSocketConnection.java:614)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.close(AbstractWebSocketConnection.java:289)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.close(AbstractWebSocketConnection.java:283)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.close(WebSocketSession.java:123)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.doStop(WebSocketSession.java:169)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.websocket.servlet.WebSocketServlet.destroy(WebSocketServlet.java:95)
+	at io.pedestal.http.jetty.websockets.proxy$org.eclipse.jetty.websocket.servlet.WebSocketServlet$ff19274a.destroy(Unknown Source)
+	at org.eclipse.jetty.servlet.ServletHolder.destroyInstance(ServletHolder.java:474)
+	at org.eclipse.jetty.servlet.ServletHolder.doStop(ServletHolder.java:445)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:124)
+	at org.eclipse.jetty.servlet.ServletHandler.doStop(ServletHandler.java:226)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:124)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:838)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:355)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:902)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:271)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:124)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:523)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at io.pedestal.http.jetty$stop.invokeStatic(jetty.clj:206)
+	at io.pedestal.http.jetty$stop.invoke(jetty.clj:205)
+	at io.pedestal.http.jetty$server$fn__14586.invoke(jetty.clj:215)
+	at io.pedestal.http$stop.invokeStatic(http.clj:362)
+	at io.pedestal.http$stop.invoke(http.clj:361)
+	at pedestal_play.server$eval26029.invokeStatic(form-init1315289372792906991.clj:1391)
+	at pedestal_play.server$eval26029.invoke(form-init1315289372792906991.clj:1391)
+	at clojure.lang.Compiler.eval(Compiler.java:6927)
+	at clojure.lang.Compiler.eval(Compiler.java:6890)
+	at clojure.core$eval.invokeStatic(core.clj:3105)
+	at clojure.core$eval.invoke(core.clj:3101)
+	at clojure.main$repl$read_eval_print__7408$fn__7411.invoke(main.clj:240)
+	at clojure.main$repl$read_eval_print__7408.invoke(main.clj:240)
+	at clojure.main$repl$fn__7417.invoke(main.clj:258)
+	at clojure.main$repl.invokeStatic(main.clj:258)
+	at clojure.main$repl.doInvoke(main.clj:174)
+	at clojure.lang.RestFn.invoke(RestFn.java:1523)
+	at clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__15236.invoke(interruptible_eval.clj:87)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:85)
+	at clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:55)
+	at clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__15281$fn__15284.invoke(interruptible_eval.clj:222)
+	at clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__15276.invoke(interruptible_eval.clj:190)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:270)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:494)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 72 common frames omitted
+01:23:43.558 [nREPL-worker-52] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "Shutdown", :line 119}
+01:23:43.559 [nREPL-worker-52] ERROR pedestal-play.service - {:msg "WS Error happened", :line 117}
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.eclipse.jetty.websocket.common.io.FrameFlusher$Flusher.flush(FrameFlusher.java:153)
+	at org.eclipse.jetty.websocket.common.io.FrameFlusher$Flusher.process(FrameFlusher.java:217)
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.eclipse.jetty.websocket.common.io.FrameFlusher.enqueue(FrameFlusher.java:382)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.outgoingFrame(AbstractWebSocketConnection.java:614)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.close(AbstractWebSocketConnection.java:289)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.close(AbstractWebSocketConnection.java:283)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.close(WebSocketSession.java:123)
+	at org.eclipse.jetty.websocket.common.WebSocketSession.doStop(WebSocketSession.java:169)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.websocket.servlet.WebSocketServlet.destroy(WebSocketServlet.java:95)
+	at io.pedestal.http.jetty.websockets.proxy$org.eclipse.jetty.websocket.servlet.WebSocketServlet$ff19274a.destroy(Unknown Source)
+	at org.eclipse.jetty.servlet.ServletHolder.destroyInstance(ServletHolder.java:474)
+	at org.eclipse.jetty.servlet.ServletHolder.doStop(ServletHolder.java:445)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:124)
+	at org.eclipse.jetty.servlet.ServletHandler.doStop(ServletHandler.java:226)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:124)
+	at org.eclipse.jetty.server.handler.ContextHandler.stopContext(ContextHandler.java:838)
+	at org.eclipse.jetty.servlet.ServletContextHandler.stopContext(ServletContextHandler.java:355)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStop(ContextHandler.java:902)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStop(ServletContextHandler.java:271)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.stop(ContainerLifeCycle.java:142)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStop(ContainerLifeCycle.java:160)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStop(AbstractHandler.java:124)
+	at org.eclipse.jetty.server.Server.doStop(Server.java:523)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.stop(AbstractLifeCycle.java:89)
+	at io.pedestal.http.jetty$stop.invokeStatic(jetty.clj:206)
+	at io.pedestal.http.jetty$stop.invoke(jetty.clj:205)
+	at io.pedestal.http.jetty$server$fn__14586.invoke(jetty.clj:215)
+	at io.pedestal.http$stop.invokeStatic(http.clj:362)
+	at io.pedestal.http$stop.invoke(http.clj:361)
+	at pedestal_play.server$eval26029.invokeStatic(form-init1315289372792906991.clj:1391)
+	at pedestal_play.server$eval26029.invoke(form-init1315289372792906991.clj:1391)
+	at clojure.lang.Compiler.eval(Compiler.java:6927)
+	at clojure.lang.Compiler.eval(Compiler.java:6890)
+	at clojure.core$eval.invokeStatic(core.clj:3105)
+	at clojure.core$eval.invoke(core.clj:3101)
+	at clojure.main$repl$read_eval_print__7408$fn__7411.invoke(main.clj:240)
+	at clojure.main$repl$read_eval_print__7408.invoke(main.clj:240)
+	at clojure.main$repl$fn__7417.invoke(main.clj:258)
+	at clojure.main$repl.invokeStatic(main.clj:258)
+	at clojure.main$repl.doInvoke(main.clj:174)
+	at clojure.lang.RestFn.invoke(RestFn.java:1523)
+	at clojure.tools.nrepl.middleware.interruptible_eval$evaluate$fn__15236.invoke(interruptible_eval.clj:87)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invokeStatic(interruptible_eval.clj:85)
+	at clojure.tools.nrepl.middleware.interruptible_eval$evaluate.invoke(interruptible_eval.clj:55)
+	at clojure.tools.nrepl.middleware.interruptible_eval$interruptible_eval$fn__15281$fn__15284.invoke(interruptible_eval.clj:222)
+	at clojure.tools.nrepl.middleware.interruptible_eval$run_next$fn__15276.invoke(interruptible_eval.clj:190)
+	at clojure.lang.AFn.run(AFn.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:270)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:494)
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 72 common frames omitted
+01:23:43.563 [nREPL-worker-52] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@59b27ebd{/,null,UNAVAILABLE}
+14:16:06.537 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @7645ms to org.eclipse.jetty.util.log.Slf4jLog
+14:16:38.356 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+14:16:38.430 [nREPL-worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4c29def1{/,null,AVAILABLE}
+14:16:38.574 [nREPL-worker-0] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2b0d5bb8{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+14:16:38.575 [nREPL-worker-0] INFO  org.eclipse.jetty.server.Server - Started @39684ms
+14:17:15.430 [qtp852613650-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:17:15.434 [qtp852613650-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:17:15.445 [qtp852613650-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:17:24.454 [qtp852613650-29] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+14:17:24.455 [qtp852613650-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:17:24.471 [qtp852613650-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:17:44.776 [qtp852613650-28] INFO  io.pedestal.http - {:msg "GET /hello", :line 80}
+14:17:44.778 [qtp852613650-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:17:44.789 [qtp852613650-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:19:26.342 [nREPL-worker-1] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2b0d5bb8{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+14:19:26.345 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4c29def1{/,null,UNAVAILABLE}
+15:51:53.100 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @5485ms to org.eclipse.jetty.util.log.Slf4jLog
+15:53:48.184 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - jetty-9.4.0.v20161208
+15:53:48.236 [nREPL-worker-1] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3e3f169{/,null,AVAILABLE}
+15:53:48.271 [nREPL-worker-1] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@58da9f73{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8080}
+15:53:48.271 [nREPL-worker-1] INFO  org.eclipse.jetty.server.Server - Started @120658ms
+15:55:35.677 [qtp1178404500-30] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+15:55:35.682 [qtp1178404500-30] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:55:35.697 [qtp1178404500-30] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:55:41.608 [qtp1178404500-31] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+15:55:41.611 [qtp1178404500-31] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:55:41.626 [qtp1178404500-31] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:58:56.825 [qtp1178404500-31] INFO  io.pedestal.http - {:msg "GET /about", :line 80}
+15:58:56.827 [qtp1178404500-31] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:58:56.843 [qtp1178404500-31] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+16:00:31.201 [qtp1178404500-24] INFO  pedestal-play.service - {:msg "Client: Hello from the Client-1!", :line 114}
+16:00:52.565 [qtp1178404500-31] INFO  pedestal-play.service - {:msg "Client: Hello from the Client-2!", :line 114}
+16:08:18.347 [Scheduler-1999700670] ERROR pedestal-play.service - {:msg "WS Error happened", :line 118}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+16:08:18.356 [Scheduler-1999700670] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 120}
+16:08:18.360 [Scheduler-1999700670] ERROR pedestal-play.service - {:msg "WS Error happened", :line 118}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+16:08:18.364 [Scheduler-1999700670] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 120}
+16:08:18.368 [Scheduler-1999700670] ERROR pedestal-play.service - {:msg "WS Error happened", :line 118}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+16:08:18.375 [Scheduler-1999700670] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 120}
+16:08:18.379 [Scheduler-1999700670] ERROR pedestal-play.service - {:msg "WS Error happened", :line 118}
+java.net.SocketTimeoutException: Timeout on Read
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onReadTimeout(AbstractWebSocketConnection.java:592)
+	at org.eclipse.jetty.io.AbstractConnection.onFillInterestedFailed(AbstractConnection.java:170)
+	at org.eclipse.jetty.websocket.common.io.AbstractWebSocketConnection.onFillInterestedFailed(AbstractWebSocketConnection.java:538)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.failed(AbstractConnection.java:285)
+	at org.eclipse.jetty.io.FillInterest.onFail(FillInterest.java:142)
+	at org.eclipse.jetty.io.AbstractEndPoint.onIdleExpired(AbstractEndPoint.java:398)
+	at org.eclipse.jetty.io.IdleTimeout.checkIdleTimeout(IdleTimeout.java:166)
+	at org.eclipse.jetty.io.IdleTimeout$1.run(IdleTimeout.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+16:08:18.382 [Scheduler-1999700670] INFO  pedestal-play.service - {:msg "WS Closed:", :reason "Idle Timeout", :line 120}
+16:09:39.467 [nREPL-worker-7] INFO  pedestal-play.service - {:msg "Active Connections: 3", :line 102}
+16:09:51.294 [nREPL-worker-7] INFO  pedestal-play.service - {:msg "Active Connections: 2", :line 102}
+16:09:53.298 [nREPL-worker-7] INFO  pedestal-play.service - {:msg "Active Connections: 1", :line 102}

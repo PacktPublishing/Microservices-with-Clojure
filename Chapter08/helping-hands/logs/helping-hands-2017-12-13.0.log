@@ -1,0 +1,714 @@
+11:40:54.217 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:40:54.223 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:40:54.239 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:41:18.366 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:41:18.368 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:41:18.376 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:41:29.677 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:41:29.679 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:41:29.690 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:42:02.558 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:42:02.559 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:42:02.566 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:42:02.624 [qtp20315456-22] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-stylobate triggered", :context {:response {:status 400, :body #error {
+ :cause "Wrong number of args (2) passed to: core/assoc--4371"
+ :via
+ [{:type clojure.lang.ExceptionInfo
+   :message "clojure.lang.ArityException in Interceptor :helping-hands.service/auth - Wrong number of args (2) passed to: core/assoc--4371"
+   :data {:execution-id 5, :stage :enter, :interceptor :helping-hands.service/auth, :exception-type :clojure.lang.ArityException, :exception #error {
+ :cause "Wrong number of args (2) passed to: core/assoc--4371"
+ :via
+ [{:type clojure.lang.ArityException
+   :message "Wrong number of args (2) passed to: core/assoc--4371"
+   :at [clojure.lang.AFn throwArity "AFn.java" 429]}]
+ :trace
+ [[clojure.lang.AFn throwArity "AFn.java" 429]
+  [clojure.lang.RestFn invoke "RestFn.java" 427]
+  [helping_hands.service$fn__20831 invokeStatic "form-init1308893037020567792.clj" 26]
+  [helping_hands.service$fn__20831 invoke "form-init1308893037020567792.clj" 24]
+  [io.pedestal.interceptor.chain$try_f invokeStatic "chain.clj" 54]
+  [io.pedestal.interceptor.chain$try_f invoke "chain.clj" 44]
+  [io.pedestal.interceptor.chain$process_all_with_binding invokeStatic "chain.clj" 171]
+  [io.pedestal.interceptor.chain$process_all_with_binding invoke "chain.clj" 146]
+  [io.pedestal.interceptor.chain$process_all$fn__8888 invoke "chain.clj" 188]
+  [clojure.lang.AFn applyToHelper "AFn.java" 152]
+  [clojure.lang.AFn applyTo "AFn.java" 144]
+  [clojure.core$apply invokeStatic "core.clj" 646]
+  [clojure.core$with_bindings_STAR_ invokeStatic "core.clj" 1881]
+  [clojure.core$with_bindings_STAR_ doInvoke "core.clj" 1881]
+  [clojure.lang.RestFn invoke "RestFn.java" 425]
+  [io.pedestal.interceptor.chain$process_all invokeStatic "chain.clj" 186]
+  [io.pedestal.interceptor.chain$process_all invoke "chain.clj" 182]
+  [io.pedestal.interceptor.chain$enter_all invokeStatic "chain.clj" 235]
+  [io.pedestal.interceptor.chain$enter_all invoke "chain.clj" 229]
+  [io.pedestal.interceptor.chain$execute invokeStatic "chain.clj" 379]
+  [io.pedestal.interceptor.chain$execute invoke "chain.clj" 352]
+  [io.pedestal.interceptor.chain$execute invokeStatic "chain.clj" 389]
+  [io.pedestal.interceptor.chain$execute invoke "chain.clj" 352]
+  [io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13764 invoke "servlet_interceptor.clj" 350]
+  [io.pedestal.http.servlet.FnServlet service "servlet.clj" 28]
+  [org.eclipse.jetty.servlet.ServletHolder handle "ServletHolder.java" 838]
+  [org.eclipse.jetty.servlet.ServletHandler doHandle "ServletHandler.java" 543]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextHandle "ScopedHandler.java" 188]
+  [org.eclipse.jetty.server.handler.ContextHandler doHandle "ContextHandler.java" 1228]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextScope "ScopedHandler.java" 168]
+  [org.eclipse.jetty.servlet.ServletHandler doScope "ServletHandler.java" 481]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextScope "ScopedHandler.java" 166]
+  [org.eclipse.jetty.server.handler.ContextHandler doScope "ContextHandler.java" 1130]
+  [org.eclipse.jetty.server.handler.ScopedHandler handle "ScopedHandler.java" 141]
+  [org.eclipse.jetty.server.handler.HandlerWrapper handle "HandlerWrapper.java" 132]
+  [org.eclipse.jetty.server.Server handle "Server.java" 564]
+  [org.eclipse.jetty.server.HttpChannel handle "HttpChannel.java" 318]
+  [org.eclipse.jetty.server.HttpConnection onFillable "HttpConnection.java" 251]
+  [org.eclipse.jetty.io.AbstractConnection$ReadCallback succeeded "AbstractConnection.java" 279]
+  [org.eclipse.jetty.io.FillInterest fillable "FillInterest.java" 112]
+  [org.eclipse.jetty.io.ChannelEndPoint$2 run "ChannelEndPoint.java" 124]
+  [org.eclipse.jetty.util.thread.QueuedThreadPool runJob "QueuedThreadPool.java" 672]
+  [org.eclipse.jetty.util.thread.QueuedThreadPool$2 run "QueuedThreadPool.java" 590]
+  [java.lang.Thread run "Thread.java" 745]]}}
+   :at [clojure.core$ex_info invokeStatic "core.clj" 4617]}
+  {:type clojure.lang.ArityException
+   :message "Wrong number of args (2) passed to: core/assoc--4371"
+   :at [clojure.lang.AFn throwArity "AFn.java" 429]}]
+ :trace
+ [[clojure.lang.AFn throwArity "AFn.java" 429]
+  [clojure.lang.RestFn invoke "RestFn.java" 427]
+  [helping_hands.service$fn__20831 invokeStatic "form-init1308893037020567792.clj" 26]
+  [helping_hands.service$fn__20831 invoke "form-init1308893037020567792.clj" 24]
+  [io.pedestal.interceptor.chain$try_f invokeStatic "chain.clj" 54]
+  [io.pedestal.interceptor.chain$try_f invoke "chain.clj" 44]
+  [io.pedestal.interceptor.chain$process_all_with_binding invokeStatic "chain.clj" 171]
+  [io.pedestal.interceptor.chain$process_all_with_binding invoke "chain.clj" 146]
+  [io.pedestal.interceptor.chain$process_all$fn__8888 invoke "chain.clj" 188]
+  [clojure.lang.AFn applyToHelper "AFn.java" 152]
+  [clojure.lang.AFn applyTo "AFn.java" 144]
+  [clojure.core$apply invokeStatic "core.clj" 646]
+  [clojure.core$with_bindings_STAR_ invokeStatic "core.clj" 1881]
+  [clojure.core$with_bindings_STAR_ doInvoke "core.clj" 1881]
+  [clojure.lang.RestFn invoke "RestFn.java" 425]
+  [io.pedestal.interceptor.chain$process_all invokeStatic "chain.clj" 186]
+  [io.pedestal.interceptor.chain$process_all invoke "chain.clj" 182]
+  [io.pedestal.interceptor.chain$enter_all invokeStatic "chain.clj" 235]
+  [io.pedestal.interceptor.chain$enter_all invoke "chain.clj" 229]
+  [io.pedestal.interceptor.chain$execute invokeStatic "chain.clj" 379]
+  [io.pedestal.interceptor.chain$execute invoke "chain.clj" 352]
+  [io.pedestal.interceptor.chain$execute invokeStatic "chain.clj" 389]
+  [io.pedestal.interceptor.chain$execute invoke "chain.clj" 352]
+  [io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13764 invoke "servlet_interceptor.clj" 350]
+  [io.pedestal.http.servlet.FnServlet service "servlet.clj" 28]
+  [org.eclipse.jetty.servlet.ServletHolder handle "ServletHolder.java" 838]
+  [org.eclipse.jetty.servlet.ServletHandler doHandle "ServletHandler.java" 543]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextHandle "ScopedHandler.java" 188]
+  [org.eclipse.jetty.server.handler.ContextHandler doHandle "ContextHandler.java" 1228]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextScope "ScopedHandler.java" 168]
+  [org.eclipse.jetty.servlet.ServletHandler doScope "ServletHandler.java" 481]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextScope "ScopedHandler.java" 166]
+  [org.eclipse.jetty.server.handler.ContextHandler doScope "ContextHandler.java" 1130]
+  [org.eclipse.jetty.server.handler.ScopedHandler handle "ScopedHandler.java" 141]
+  [org.eclipse.jetty.server.handler.HandlerWrapper handle "HandlerWrapper.java" 132]
+  [org.eclipse.jetty.server.Server handle "Server.java" 564]
+  [org.eclipse.jetty.server.HttpChannel handle "HttpChannel.java" 318]
+  [org.eclipse.jetty.server.HttpConnection onFillable "HttpConnection.java" 251]
+  [org.eclipse.jetty.io.AbstractConnection$ReadCallback succeeded "AbstractConnection.java" 279]
+  [org.eclipse.jetty.io.FillInterest fillable "FillInterest.java" 112]
+  [org.eclipse.jetty.io.ChannelEndPoint$2 run "ChannelEndPoint.java" 124]
+  [org.eclipse.jetty.util.thread.QueuedThreadPool runJob "QueuedThreadPool.java" 672]
+  [org.eclipse.jetty.util.thread.QueuedThreadPool$2 run "QueuedThreadPool.java" 590]
+  [java.lang.Thread run "Thread.java" 745]]}, :headers {"X-Frame-Options" "DENY", "Access-Control-Allow-Origin" "", "X-XSS-Protection" "1; mode=block", "X-Download-Options" "noopen", "Strict-Transport-Security" "max-age=31536000; includeSubdomains", "X-Permitted-Cross-Domain-Policies" "none", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy", "X-Content-Type-Options" "nosniff", "Content-Security-Policy" "object-src none"}}, :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true"}, :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x638240ca "HTTP/1.1 200 \nDate: Wed, 13 Dec 2017 06:12:02 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x4a6a92ad "io.pedestal.http.servlet.FnServlet@4a6a92ad"], :headers {"user-agent" "curl/7.47.0", "accept" "*/*", "host" "localhost:8080", "origin" ""}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0xc83b7c3 "Request(GET //localhost:8080/)@c83b7c3"], :path-info "/", :url-for #delay[{:status :pending, :val nil} 0x3a91cf7f], :uri "/", :server-name "localhost", :query-string nil, :path-params [], :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x6899f330 "HttpInputOverHTTP@6899f330[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #delay[{:status :pending, :val nil} 0x3a91cf7f]}, :enter-async [#function[io.pedestal.http.impl.servlet-interceptor/start-servlet-async]], :io.pedestal.interceptor.chain/terminators (#function[io.pedestal.http.impl.servlet-interceptor/terminator-inject/fn--13739]), :servlet-response #object[org.eclipse.jetty.server.Response 0x638240ca "HTTP/1.1 200 \nDate: Wed, 13 Dec 2017 06:12:02 GMT\r\n\r\n"], :route {:path "/", :method :get, :path-re #"/\Q\E", :path-parts [""], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name :helping-hands.service/auth} #Interceptor{:name }], :route-name :helping-hands.service/home-page, :path-params [], :io.pedestal.http.route.prefix-tree/satisfies-constraints? #function[clojure.core/constantly/fn--4614]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x4a6a92ad "io.pedestal.http.servlet.FnServlet@4a6a92ad"], :servlet-request #object[org.eclipse.jetty.server.Request 0xc83b7c3 "Request(GET //localhost:8080/)@c83b7c3"], :url-for #delay[{:status :pending, :val nil} 0x3a91cf7f], :io.pedestal.interceptor.chain/execution-id 5, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x1d0791fe "org.eclipse.jetty.servlet.ServletHolder$Config@1d0791fe"], :async? #function[io.pedestal.http.impl.servlet-interceptor/servlet-async?]}, :line 241}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor :io.pedestal.http.impl.servlet-interceptor/ring-response - No implementation of method: :default-content-type of protocol: #'io.pedestal.http.impl.servlet-interceptor/WriteableBody found for class: clojure.lang.ExceptionInfo
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:254)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$leave_all$fn__8915.invoke(chain.clj:268)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:266)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:260)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13764.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: No implementation of method: :default-content-type of protocol: #'io.pedestal.http.impl.servlet-interceptor/WriteableBody found for class: clojure.lang.ExceptionInfo
+	at clojure.core$_cache_protocol_fn.invokeStatic(core_deftype.clj:568)
+	at clojure.core$_cache_protocol_fn.invoke(core_deftype.clj:560)
+	at io.pedestal.http.impl.servlet_interceptor$eval13361$fn__13375$G__13350__13380.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$set_default_content_type.invokeStatic(servlet_interceptor.clj:152)
+	at io.pedestal.http.impl.servlet_interceptor$set_default_content_type.invoke(servlet_interceptor.clj:148)
+	at io.pedestal.http.impl.servlet_interceptor$set_response.invokeStatic(servlet_interceptor.clj:156)
+	at io.pedestal.http.impl.servlet_interceptor$set_response.invoke(servlet_interceptor.clj:154)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invokeStatic(servlet_interceptor.clj:164)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invoke(servlet_interceptor.clj:161)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invokeStatic(servlet_interceptor.clj:228)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invoke(servlet_interceptor.clj:217)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 37 common frames omitted
+11:42:11.402 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:42:11.404 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:42:11.409 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:42:11.417 [qtp20315456-24] ERROR i.p.http.impl.servlet-interceptor - {:msg "error-stylobate triggered", :context {:response {:status 400, :body #error {
+ :cause "Wrong number of args (2) passed to: core/assoc--4371"
+ :via
+ [{:type clojure.lang.ExceptionInfo
+   :message "clojure.lang.ArityException in Interceptor :helping-hands.service/auth - Wrong number of args (2) passed to: core/assoc--4371"
+   :data {:execution-id 6, :stage :enter, :interceptor :helping-hands.service/auth, :exception-type :clojure.lang.ArityException, :exception #error {
+ :cause "Wrong number of args (2) passed to: core/assoc--4371"
+ :via
+ [{:type clojure.lang.ArityException
+   :message "Wrong number of args (2) passed to: core/assoc--4371"
+   :at [clojure.lang.AFn throwArity "AFn.java" 429]}]
+ :trace
+ [[clojure.lang.AFn throwArity "AFn.java" 429]
+  [clojure.lang.RestFn invoke "RestFn.java" 427]
+  [helping_hands.service$fn__20831 invokeStatic "form-init1308893037020567792.clj" 26]
+  [helping_hands.service$fn__20831 invoke "form-init1308893037020567792.clj" 24]
+  [io.pedestal.interceptor.chain$try_f invokeStatic "chain.clj" 54]
+  [io.pedestal.interceptor.chain$try_f invoke "chain.clj" 44]
+  [io.pedestal.interceptor.chain$process_all_with_binding invokeStatic "chain.clj" 171]
+  [io.pedestal.interceptor.chain$process_all_with_binding invoke "chain.clj" 146]
+  [io.pedestal.interceptor.chain$process_all$fn__8888 invoke "chain.clj" 188]
+  [clojure.lang.AFn applyToHelper "AFn.java" 152]
+  [clojure.lang.AFn applyTo "AFn.java" 144]
+  [clojure.core$apply invokeStatic "core.clj" 646]
+  [clojure.core$with_bindings_STAR_ invokeStatic "core.clj" 1881]
+  [clojure.core$with_bindings_STAR_ doInvoke "core.clj" 1881]
+  [clojure.lang.RestFn invoke "RestFn.java" 425]
+  [io.pedestal.interceptor.chain$process_all invokeStatic "chain.clj" 186]
+  [io.pedestal.interceptor.chain$process_all invoke "chain.clj" 182]
+  [io.pedestal.interceptor.chain$enter_all invokeStatic "chain.clj" 235]
+  [io.pedestal.interceptor.chain$enter_all invoke "chain.clj" 229]
+  [io.pedestal.interceptor.chain$execute invokeStatic "chain.clj" 379]
+  [io.pedestal.interceptor.chain$execute invoke "chain.clj" 352]
+  [io.pedestal.interceptor.chain$execute invokeStatic "chain.clj" 389]
+  [io.pedestal.interceptor.chain$execute invoke "chain.clj" 352]
+  [io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13764 invoke "servlet_interceptor.clj" 350]
+  [io.pedestal.http.servlet.FnServlet service "servlet.clj" 28]
+  [org.eclipse.jetty.servlet.ServletHolder handle "ServletHolder.java" 838]
+  [org.eclipse.jetty.servlet.ServletHandler doHandle "ServletHandler.java" 543]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextHandle "ScopedHandler.java" 188]
+  [org.eclipse.jetty.server.handler.ContextHandler doHandle "ContextHandler.java" 1228]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextScope "ScopedHandler.java" 168]
+  [org.eclipse.jetty.servlet.ServletHandler doScope "ServletHandler.java" 481]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextScope "ScopedHandler.java" 166]
+  [org.eclipse.jetty.server.handler.ContextHandler doScope "ContextHandler.java" 1130]
+  [org.eclipse.jetty.server.handler.ScopedHandler handle "ScopedHandler.java" 141]
+  [org.eclipse.jetty.server.handler.HandlerWrapper handle "HandlerWrapper.java" 132]
+  [org.eclipse.jetty.server.Server handle "Server.java" 564]
+  [org.eclipse.jetty.server.HttpChannel handle "HttpChannel.java" 318]
+  [org.eclipse.jetty.server.HttpConnection onFillable "HttpConnection.java" 251]
+  [org.eclipse.jetty.io.AbstractConnection$ReadCallback succeeded "AbstractConnection.java" 279]
+  [org.eclipse.jetty.io.FillInterest fillable "FillInterest.java" 112]
+  [org.eclipse.jetty.io.ChannelEndPoint$2 run "ChannelEndPoint.java" 124]
+  [org.eclipse.jetty.util.thread.Invocable invokePreferred "Invocable.java" 122]
+  [org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy invoke "ExecutingExecutionStrategy.java" 58]
+  [org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume produceConsume "ExecuteProduceConsume.java" 201]
+  [org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume run "ExecuteProduceConsume.java" 133]
+  [org.eclipse.jetty.util.thread.QueuedThreadPool runJob "QueuedThreadPool.java" 672]
+  [org.eclipse.jetty.util.thread.QueuedThreadPool$2 run "QueuedThreadPool.java" 590]
+  [java.lang.Thread run "Thread.java" 745]]}}
+   :at [clojure.core$ex_info invokeStatic "core.clj" 4617]}
+  {:type clojure.lang.ArityException
+   :message "Wrong number of args (2) passed to: core/assoc--4371"
+   :at [clojure.lang.AFn throwArity "AFn.java" 429]}]
+ :trace
+ [[clojure.lang.AFn throwArity "AFn.java" 429]
+  [clojure.lang.RestFn invoke "RestFn.java" 427]
+  [helping_hands.service$fn__20831 invokeStatic "form-init1308893037020567792.clj" 26]
+  [helping_hands.service$fn__20831 invoke "form-init1308893037020567792.clj" 24]
+  [io.pedestal.interceptor.chain$try_f invokeStatic "chain.clj" 54]
+  [io.pedestal.interceptor.chain$try_f invoke "chain.clj" 44]
+  [io.pedestal.interceptor.chain$process_all_with_binding invokeStatic "chain.clj" 171]
+  [io.pedestal.interceptor.chain$process_all_with_binding invoke "chain.clj" 146]
+  [io.pedestal.interceptor.chain$process_all$fn__8888 invoke "chain.clj" 188]
+  [clojure.lang.AFn applyToHelper "AFn.java" 152]
+  [clojure.lang.AFn applyTo "AFn.java" 144]
+  [clojure.core$apply invokeStatic "core.clj" 646]
+  [clojure.core$with_bindings_STAR_ invokeStatic "core.clj" 1881]
+  [clojure.core$with_bindings_STAR_ doInvoke "core.clj" 1881]
+  [clojure.lang.RestFn invoke "RestFn.java" 425]
+  [io.pedestal.interceptor.chain$process_all invokeStatic "chain.clj" 186]
+  [io.pedestal.interceptor.chain$process_all invoke "chain.clj" 182]
+  [io.pedestal.interceptor.chain$enter_all invokeStatic "chain.clj" 235]
+  [io.pedestal.interceptor.chain$enter_all invoke "chain.clj" 229]
+  [io.pedestal.interceptor.chain$execute invokeStatic "chain.clj" 379]
+  [io.pedestal.interceptor.chain$execute invoke "chain.clj" 352]
+  [io.pedestal.interceptor.chain$execute invokeStatic "chain.clj" 389]
+  [io.pedestal.interceptor.chain$execute invoke "chain.clj" 352]
+  [io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13764 invoke "servlet_interceptor.clj" 350]
+  [io.pedestal.http.servlet.FnServlet service "servlet.clj" 28]
+  [org.eclipse.jetty.servlet.ServletHolder handle "ServletHolder.java" 838]
+  [org.eclipse.jetty.servlet.ServletHandler doHandle "ServletHandler.java" 543]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextHandle "ScopedHandler.java" 188]
+  [org.eclipse.jetty.server.handler.ContextHandler doHandle "ContextHandler.java" 1228]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextScope "ScopedHandler.java" 168]
+  [org.eclipse.jetty.servlet.ServletHandler doScope "ServletHandler.java" 481]
+  [org.eclipse.jetty.server.handler.ScopedHandler nextScope "ScopedHandler.java" 166]
+  [org.eclipse.jetty.server.handler.ContextHandler doScope "ContextHandler.java" 1130]
+  [org.eclipse.jetty.server.handler.ScopedHandler handle "ScopedHandler.java" 141]
+  [org.eclipse.jetty.server.handler.HandlerWrapper handle "HandlerWrapper.java" 132]
+  [org.eclipse.jetty.server.Server handle "Server.java" 564]
+  [org.eclipse.jetty.server.HttpChannel handle "HttpChannel.java" 318]
+  [org.eclipse.jetty.server.HttpConnection onFillable "HttpConnection.java" 251]
+  [org.eclipse.jetty.io.AbstractConnection$ReadCallback succeeded "AbstractConnection.java" 279]
+  [org.eclipse.jetty.io.FillInterest fillable "FillInterest.java" 112]
+  [org.eclipse.jetty.io.ChannelEndPoint$2 run "ChannelEndPoint.java" 124]
+  [org.eclipse.jetty.util.thread.Invocable invokePreferred "Invocable.java" 122]
+  [org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy invoke "ExecutingExecutionStrategy.java" 58]
+  [org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume produceConsume "ExecuteProduceConsume.java" 201]
+  [org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume run "ExecuteProduceConsume.java" 133]
+  [org.eclipse.jetty.util.thread.QueuedThreadPool runJob "QueuedThreadPool.java" 672]
+  [org.eclipse.jetty.util.thread.QueuedThreadPool$2 run "QueuedThreadPool.java" 590]
+  [java.lang.Thread run "Thread.java" 745]]}, :headers {"X-Frame-Options" "DENY", "Access-Control-Allow-Origin" "", "X-XSS-Protection" "1; mode=block", "X-Download-Options" "noopen", "Strict-Transport-Security" "max-age=31536000; includeSubdomains", "X-Permitted-Cross-Domain-Policies" "none", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy", "X-Content-Type-Options" "nosniff", "Content-Security-Policy" "object-src none"}}, :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true"}, :io.pedestal.interceptor.chain/stack (#Interceptor{:name :io.pedestal.http.impl.servlet-interceptor/terminator-injector}), :request {:protocol "HTTP/1.1", :async-supported? true, :remote-addr "127.0.0.1", :servlet-response #object[org.eclipse.jetty.server.Response 0x6f62c972 "HTTP/1.1 200 \nDate: Wed, 13 Dec 2017 06:12:11 GMT\r\n\r\n"], :servlet #object[io.pedestal.http.servlet.FnServlet 0x4a6a92ad "io.pedestal.http.servlet.FnServlet@4a6a92ad"], :headers {"user-agent" "curl/7.47.0", "accept" "*/*", "host" "localhost:8080", "origin" ""}, :server-port 8080, :servlet-request #object[org.eclipse.jetty.server.Request 0xed2ecdd "Request(GET //localhost:8080/)@ed2ecdd"], :path-info "/", :url-for #delay[{:status :pending, :val nil} 0x5ec723c5], :uri "/", :server-name "localhost", :query-string nil, :path-params [], :body #object[org.eclipse.jetty.server.HttpInputOverHTTP 0x769d58c5 "HttpInputOverHTTP@769d58c5[c=0,q=0,[0]=null,s=STREAM]"], :scheme :http, :request-method :get}, :bindings {#'io.pedestal.http.route/*url-for* #delay[{:status :pending, :val nil} 0x5ec723c5]}, :enter-async [#function[io.pedestal.http.impl.servlet-interceptor/start-servlet-async]], :io.pedestal.interceptor.chain/terminators (#function[io.pedestal.http.impl.servlet-interceptor/terminator-inject/fn--13739]), :servlet-response #object[org.eclipse.jetty.server.Response 0x6f62c972 "HTTP/1.1 200 \nDate: Wed, 13 Dec 2017 06:12:11 GMT\r\n\r\n"], :route {:path "/", :method :get, :path-re #"/\Q\E", :path-parts [""], :interceptors [#Interceptor{:name :io.pedestal.http.body-params/body-params} #Interceptor{:name :io.pedestal.http/html-body} #Interceptor{:name :helping-hands.service/auth} #Interceptor{:name }], :route-name :helping-hands.service/home-page, :path-params [], :io.pedestal.http.route.prefix-tree/satisfies-constraints? #function[clojure.core/constantly/fn--4614]}, :servlet #object[io.pedestal.http.servlet.FnServlet 0x4a6a92ad "io.pedestal.http.servlet.FnServlet@4a6a92ad"], :servlet-request #object[org.eclipse.jetty.server.Request 0xed2ecdd "Request(GET //localhost:8080/)@ed2ecdd"], :url-for #delay[{:status :pending, :val nil} 0x5ec723c5], :io.pedestal.interceptor.chain/execution-id 6, :servlet-config #object[org.eclipse.jetty.servlet.ServletHolder$Config 0x1d0791fe "org.eclipse.jetty.servlet.ServletHolder$Config@1d0791fe"], :async? #function[io.pedestal.http.impl.servlet-interceptor/servlet-async?]}, :line 241}
+clojure.lang.ExceptionInfo: java.lang.IllegalArgumentException in Interceptor :io.pedestal.http.impl.servlet-interceptor/ring-response - No implementation of method: :default-content-type of protocol: #'io.pedestal.http.impl.servlet-interceptor/WriteableBody found for class: clojure.lang.ExceptionInfo
+	at clojure.core$ex_info.invokeStatic(core.clj:4617)
+	at clojure.core$ex_info.invoke(core.clj:4617)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invokeStatic(chain.clj:35)
+	at io.pedestal.interceptor.chain$throwable__GT_ex_info.invoke(chain.clj:32)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:57)
+	at io.pedestal.interceptor.chain$try_f.invoke(chain.clj:44)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invokeStatic(chain.clj:254)
+	at io.pedestal.interceptor.chain$leave_all_with_binding.invoke(chain.clj:237)
+	at io.pedestal.interceptor.chain$leave_all$fn__8915.invoke(chain.clj:268)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.AFn.applyTo(AFn.java:144)
+	at clojure.core$apply.invokeStatic(core.clj:646)
+	at clojure.core$with_bindings_STAR_.invokeStatic(core.clj:1881)
+	at clojure.core$with_bindings_STAR_.doInvoke(core.clj:1881)
+	at clojure.lang.RestFn.invoke(RestFn.java:425)
+	at io.pedestal.interceptor.chain$leave_all.invokeStatic(chain.clj:266)
+	at io.pedestal.interceptor.chain$leave_all.invoke(chain.clj:260)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:379)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.interceptor.chain$execute.invokeStatic(chain.clj:389)
+	at io.pedestal.interceptor.chain$execute.invoke(chain.clj:352)
+	at io.pedestal.http.impl.servlet_interceptor$interceptor_service_fn$fn__13764.invoke(servlet_interceptor.clj:350)
+	at io.pedestal.http.servlet.FnServlet.service(servlet.clj:28)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:838)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:543)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1228)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1130)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:318)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:112)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:122)
+	at org.eclipse.jetty.util.thread.strategy.ExecutingExecutionStrategy.invoke(ExecutingExecutionStrategy.java:58)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:201)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:133)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: No implementation of method: :default-content-type of protocol: #'io.pedestal.http.impl.servlet-interceptor/WriteableBody found for class: clojure.lang.ExceptionInfo
+	at clojure.core$_cache_protocol_fn.invokeStatic(core_deftype.clj:568)
+	at clojure.core$_cache_protocol_fn.invoke(core_deftype.clj:560)
+	at io.pedestal.http.impl.servlet_interceptor$eval13361$fn__13375$G__13350__13380.invoke(servlet_interceptor.clj:37)
+	at io.pedestal.http.impl.servlet_interceptor$set_default_content_type.invokeStatic(servlet_interceptor.clj:152)
+	at io.pedestal.http.impl.servlet_interceptor$set_default_content_type.invoke(servlet_interceptor.clj:148)
+	at io.pedestal.http.impl.servlet_interceptor$set_response.invokeStatic(servlet_interceptor.clj:156)
+	at io.pedestal.http.impl.servlet_interceptor$set_response.invoke(servlet_interceptor.clj:154)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invokeStatic(servlet_interceptor.clj:164)
+	at io.pedestal.http.impl.servlet_interceptor$send_response.invoke(servlet_interceptor.clj:161)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invokeStatic(servlet_interceptor.clj:228)
+	at io.pedestal.http.impl.servlet_interceptor$leave_ring_response.invoke(servlet_interceptor.clj:217)
+	at io.pedestal.interceptor.chain$try_f.invokeStatic(chain.clj:54)
+	... 41 common frames omitted
+11:42:34.740 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:42:34.740 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:42:34.742 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:42:36.700 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:42:36.700 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:42:36.703 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:43:10.120 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:43:10.121 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:43:10.127 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:44:02.439 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:44:02.442 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:44:02.447 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:44:13.004 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:44:13.005 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:44:13.007 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:44:45.734 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:44:45.734 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:44:45.736 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:50:32.241 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:50:32.242 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:50:32.253 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:51:19.622 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:51:19.624 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:51:19.631 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:51:39.751 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:51:39.751 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:51:39.758 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:52:02.512 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:52:02.512 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:52:02.516 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+11:52:26.627 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:52:26.628 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:52:26.638 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:56:28.695 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:56:28.697 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:56:28.708 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:57:27.132 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:57:27.133 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:57:27.142 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:57:57.599 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:57:57.601 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:57:57.608 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:58:15.963 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:58:15.964 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:58:15.988 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:58:52.651 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:58:52.652 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:58:52.656 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+11:58:53.783 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+11:58:53.784 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+11:58:53.787 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:01:33.468 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:01:33.469 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:01:33.471 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:02:30.223 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:02:30.224 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:02:30.228 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:04:25.987 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:04:25.989 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:04:26.000 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:06:35.372 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:06:35.373 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:06:35.376 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:07:32.026 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:07:32.027 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:07:32.033 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:07:52.912 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:07:52.914 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:07:52.919 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:08:26.498 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:08:26.499 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:08:26.506 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:08:38.235 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:08:38.236 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:08:38.243 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:08:41.138 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:08:41.139 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:08:41.144 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:08:57.779 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:08:57.780 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:08:57.783 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:09:13.001 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:09:13.002 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:09:13.005 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:09:40.896 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:09:40.896 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:09:40.900 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:10:41.117 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:10:41.124 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:10:41.132 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:11:11.558 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:11:11.559 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:11:11.564 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:12:07.379 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:12:07.381 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:12:07.385 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:12:24.013 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:12:24.014 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:12:24.016 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:15:40.121 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:15:40.122 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:15:40.135 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:15:45.603 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:15:45.605 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:15:45.608 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:16:40.185 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:16:40.186 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:16:40.197 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:17:45.509 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:17:45.509 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:17:45.512 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:18:00.786 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:18:00.787 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:18:00.790 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:19:14.279 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:19:14.280 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:19:14.282 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:20:53.304 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:20:53.305 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:20:53.309 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:38:51.348 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:38:51.349 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:38:51.351 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:38:54.502 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:38:54.502 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:38:54.504 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+12:39:25.778 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:39:25.779 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:39:25.784 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:39:28.647 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:39:28.648 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:39:28.650 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:44:02.414 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:44:02.415 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:44:02.421 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+12:44:21.935 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:44:21.936 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:44:21.942 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+12:44:28.924 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:44:28.925 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:44:28.927 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:45:49.781 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:45:49.782 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:45:49.787 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+12:45:55.414 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:45:55.415 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:45:55.425 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:46:02.942 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:46:02.943 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:46:02.947 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+12:46:05.572 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:46:05.574 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:46:05.578 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:46:12.426 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:46:12.427 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:46:12.430 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+12:50:11.332 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:50:11.333 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:50:11.335 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+12:50:18.075 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:50:18.076 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:50:18.085 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:51:22.422 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:51:22.422 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:51:22.428 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:52:19.142 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:52:19.144 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:52:19.152 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:54:01.254 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:54:01.256 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:54:01.269 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:54:26.667 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:54:26.668 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:54:26.671 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+12:54:33.895 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+12:54:33.897 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+12:54:33.903 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+14:17:20.938 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:17:20.939 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:17:20.944 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+14:17:32.450 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:17:32.451 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:17:32.458 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+14:19:00.183 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:19:00.183 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:19:00.185 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+14:19:09.473 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:19:09.473 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:19:09.476 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:19:16.991 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:19:16.992 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:19:16.997 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+14:22:09.671 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:22:09.672 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:22:09.674 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:22:11.721 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:22:11.722 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:22:11.731 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:22:39.712 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:22:39.712 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:22:39.715 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:22:41.226 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:22:41.226 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:22:41.229 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+14:28:45.464 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:28:45.465 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:28:45.504 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+14:28:57.271 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:28:57.272 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:28:57.274 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:29:06.711 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:29:06.712 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:29:06.719 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:30:38.860 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:30:38.862 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:30:38.872 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy"}, :line 111}
+14:32:07.186 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:32:07.186 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:32:07.204 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:32:24.384 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:32:24.385 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:32:24.388 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:32:28.770 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:32:28.771 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:32:28.775 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:36:07.323 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:36:07.324 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:36:07.329 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:36:14.096 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:36:14.097 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:36:14.098 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:36:25.260 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:36:25.264 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:36:25.267 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:39:09.128 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:39:09.129 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:39:09.137 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:39:26.995 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:39:26.996 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:39:27.001 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:39:36.223 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:39:36.223 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:39:36.225 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:48:28.116 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:48:28.116 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:48:28.121 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:48:30.859 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:48:30.860 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:48:30.862 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:48:33.191 [qtp20315456-29] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:48:33.192 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:48:33.205 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:48:40.893 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:48:40.894 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:48:40.897 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+14:48:45.144 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+14:48:45.145 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+14:48:45.147 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:02:08.580 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+15:02:08.581 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:02:08.590 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:02:20.502 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+15:02:20.503 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:02:20.506 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:02:25.282 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+15:02:25.283 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:02:25.285 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:03:08.032 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+15:03:08.033 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:03:08.041 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:03:15.951 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+15:03:15.952 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:03:15.957 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:03:29.173 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+15:03:29.174 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:03:29.180 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:03:51.435 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+15:03:51.436 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:03:51.440 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+15:03:56.406 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+15:03:56.407 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+15:03:56.413 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:36:27.432 [qtp20315456-27] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+20:36:27.450 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:36:27.452 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:36:36.475 [qtp20315456-22] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+20:36:36.475 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:36:36.481 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:36:44.292 [qtp20315456-24] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:36:44.293 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:36:44.297 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:37:56.581 [qtp20315456-24] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:37:56.582 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:37:56.586 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:41:14.656 [qtp20315456-28] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:41:14.658 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:41:14.665 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:41:20.183 [qtp20315456-28] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+20:41:20.184 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:41:20.187 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:41:31.748 [qtp20315456-24] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:41:31.749 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:41:31.753 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:41:55.196 [qtp20315456-24] INFO  io.pedestal.http - {:msg "GET /", :line 80}
+20:41:55.197 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:41:55.204 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:41:58.090 [qtp20315456-22] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:41:58.091 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:41:58.096 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:42:14.294 [qtp20315456-27] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:42:14.296 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:42:14.301 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:43:30.904 [qtp20315456-28] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:43:30.905 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:43:30.908 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:43:37.379 [qtp20315456-27] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:43:37.381 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:43:37.384 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:43:41.714 [qtp20315456-29] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:43:41.715 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:43:41.718 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:43:49.599 [qtp20315456-29] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:43:49.599 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:43:49.602 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+20:44:03.813 [qtp20315456-22] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:44:03.814 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:44:03.828 [qtp20315456-22] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:44:14.168 [qtp20315456-29] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:44:14.169 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:44:14.173 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:44:17.361 [qtp20315456-24] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:44:17.362 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:44:17.366 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:44:21.998 [qtp20315456-24] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:44:21.999 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:44:22.006 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:46:00.813 [qtp20315456-29] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:46:00.814 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:46:00.818 [qtp20315456-29] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:46:27.283 [qtp20315456-27] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:46:27.283 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:46:27.289 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:46:31.505 [qtp20315456-27] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:46:31.506 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:46:31.511 [qtp20315456-27] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:46:37.151 [qtp20315456-28] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:46:37.152 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:46:37.157 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:46:39.930 [qtp20315456-28] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:46:39.930 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:46:39.934 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:46:43.551 [qtp20315456-28] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:46:43.553 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:46:43.557 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:51:52.184 [qtp20315456-24] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:51:52.185 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:51:52.188 [qtp20315456-24] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:52:02.062 [qtp20315456-28] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:52:02.063 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:52:02.066 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+20:52:12.633 [qtp20315456-28] INFO  io.pedestal.http - {:msg "POST /", :line 80}
+20:52:12.634 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+20:52:12.637 [qtp20315456-28] INFO  io.pedestal.http.cors - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
